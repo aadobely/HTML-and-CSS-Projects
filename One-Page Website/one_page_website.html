@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adobely - Web Design & Development Agency</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#videos">Video Showcase</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Welcome to Adobely</h1>
+        <h2>Professional Web Design & Development in Toronto</h2>
+        <p>We are a Toronto-based web agency specializing in creating stunning, high-performance websites that drive results. With expertise in modern web technologies including WordPress, custom development, and 3D web experiences, we transform your digital vision into reality.</p>
+        <p>Our team combines creative design with technical excellence to deliver websites that not only look amazing but also perform flawlessly. From small business websites to complex web applications, we have the skills and experience to bring your project to life.</p>
+    </section>
+
+    <!-- Portfolio Section with Images -->
+    <section id="portfolio">
+        <h2>Our Portfolio</h2>
+        <p>Explore our recent projects showcasing diverse industries and creative solutions.</p>
+        
+        <div>
+            <h3>E-Commerce Platform</h3>
+            <img src="/One-Page Website/img/GLT.png" alt="Modern e-commerce website design" width="800" height="600">
+            <p>Custom WooCommerce solution with advanced filtering and payment integration.</p>
+        </div>
+
+        <div>
+            <h3>Corporate Website</h3>
+            <img src="/One-Page Website/img/PM.png" alt="Professional corporate website" width="800" height="600">
+            <p>Sleek corporate website built with WordPress and custom animations using GSAP.</p>
+        </div>
+
+        <div>
+            <h3>Restaurant Website</h3>
+            <img src="/One-Page Website/img/CK.png" alt="Restaurant website with online ordering" width="800" height="600">
+            <p>Full-featured restaurant website with online ordering system and table reservations.</p>
+        </div>
+
+        <div>
+            <h3>Portfolio Website</h3>
+            <img src="https://via.placeholder.com/800x600/9B59B6/FFFFFF?text=Creative+Portfolio" alt="Creative portfolio website" width="800" height="600">
+            <p>Interactive portfolio featuring 3D elements created with Blender and Three.js.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Custom Web Development (HTML, CSS, JavaScript)</li>
+            <li>WordPress Development & Customization</li>
+            <li>E-Commerce Solutions (WooCommerce, Shopify)</li>
+            <li>3D Web Experiences & Animation</li>
+            <li>Website Maintenance & Hosting (Cloudways)</li>
+            <li>Performance Optimization with Cloudflare</li>
+            <li>Workflow Automation with n8n</li>
+            <li>UI/UX Design with Adobe Creative Cloud</li>
+        </ul>
+    </section>
+
+    <!-- Video Section -->
+    <section id="videos">
+        <h2>Video Showcase</h2>
+        <p>Watch our tutorials and project showcases to see our expertise in action.</p>
+        
+        <div>
+            <h3>Web Development Process</h3>
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/G3e-cpL7ofc" 
+                title="HTML & CSS Full Course" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <div>
+            <h3>WordPress Tutorial</h3>
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/AABmCvjd_iU" 
+                title="WordPress Tutorial for Beginners" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <div>
+            <h3>JavaScript Animations</h3>
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/3tLb3i7GB38" 
+                title="GSAP Animation Tutorial" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <p>Ready to start your next web project? Contact us today for a free consultation!</p>
+        
+        <form action="/submit-contact" method="POST">
+            <div>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="416-555-0123">
+            </div>
+            
+            <div>
+                <label for="company">Company Name:</label>
+                <input type="text" id="company" name="company">
+            </div>
+            
+            <div>
+                <label for="project-type">Project Type:</label>
+                <select id="project-type" name="project-type" required>
+                    <option value="">Select a project type</option>
+                    <option value="new-website">New Website</option>
+                    <option value="redesign">Website Redesign</option>
+                    <option value="ecommerce">E-Commerce</option>
+                    <option value="wordpress">WordPress Development</option>
+                    <option value="maintenance">Website Maintenance</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="budget">Estimated Budget:</label>
+                <select id="budget" name="budget">
+                    <option value="">Select budget range</option>
+                    <option value="under-5k">Under $5,000</option>
+                    <option value="5k-10k">$5,000 - $10,000</option>
+                    <option value="10k-25k">$10,000 - $25,000</option>
+                    <option value="over-25k">Over $25,000</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="timeline">Project Timeline:</label>
+                <input type="text" id="timeline" name="timeline" placeholder="e.g., 2-3 months">
+            </div>
+            
+            <div>
+                <label for="message">Project Details:</label>
+                <textarea id="message" name="message" rows="5" cols="50" required placeholder="Tell us about your project..."></textarea>
+            </div>
+            
+            <div>
+                <label for="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    Subscribe to our newsletter for web development tips
+                </label>
+            </div>
+            
+            <div>
+                <button type="submit">Send Message</button>
+                <button type="reset">Clear Form</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <h3>Adobely Web Agency</h3>
+            <p>Professional Web Solutions in Toronto</p>
+        </div>
+        
+        <div>
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div>
+            <h4>Contact Info</h4>
+            <p>Downtown Toronto, Ontario</p>
+            <p>Email: info@adobely.com</p>
+            <p>Phone: (416) 555-0123</p>
+        </div>
+        
+        <div>
+            <h4>Technologies We Use</h4>
+            <p>HTML5 • CSS3 • JavaScript • WordPress • Elementor • Wix • Blender • GSAP • Cloudways • Cloudflare • Adobe Creative Cloud • n8n</p>
+        </div>
+        
+        <hr>
+        <p>&copy; 2024 Adobely. All rights reserved. | Designed and developed with passion in Toronto</p>
+    </footer>
+</body>
+</html>

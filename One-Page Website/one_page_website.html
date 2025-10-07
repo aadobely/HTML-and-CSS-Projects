@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="one_page_website.css">
+
     <title>Adobely - Web Design & Development Agency</title>
 </head>
 <body>
@@ -26,34 +28,107 @@
     </section>
 
     <!-- Portfolio Section with Images -->
-    <section id="portfolio">
-        <h2>Our Portfolio</h2>
-        <p>Explore our recent projects showcasing diverse industries and creative solutions.</p>
+<!-- Portfolio Section with Lightbox Gallery -->
+<section id="portfolio">
+    <h2>Our Portfolio</h2>
+    <p>Explore our recent projects showcasing diverse industries and creative solutions. Click on any image to view in full size.</p>
+    
+    <!-- Image Gallery Grid -->
+    <div class="row">
+        <div class="column">
+            <img src="/One-Page Website/img/GLT.png" 
+                 alt="E-Commerce Platform - Custom WooCommerce solution with advanced filtering and payment integration" 
+                 onclick="openModal();currentSlide(1)" 
+                 class="hover-shadow">
+        </div>
         
-        <div>
-            <h3>E-Commerce Platform</h3>
-            <img src="/One-Page Website/img/GLT.png" alt="Modern e-commerce website design" width="800" height="600">
-            <p>Custom WooCommerce solution with advanced filtering and payment integration.</p>
+        <div class="column">
+            <img src="/One-Page Website/img/PM.png" 
+                 alt="Corporate Website - Sleek corporate website built with WordPress and custom animations using GSAP" 
+                 onclick="openModal();currentSlide(2)" 
+                 class="hover-shadow">
         </div>
+        
+        <div class="column">
+            <img src="/One-Page Website/img/CK.png" 
+                 alt="Restaurant Website - Full-featured restaurant website with online ordering system and table reservations" 
+                 onclick="openModal();currentSlide(3)" 
+                 class="hover-shadow">
+        </div>
+        
+        <div class="column">
+            <img src="https://via.placeholder.com/800x600/9B59B6/FFFFFF?text=Creative+Portfolio" 
+                 alt="Portfolio Website - Interactive portfolio featuring 3D elements created with Blender and Three.js" 
+                 onclick="openModal();currentSlide(4)" 
+                 class="hover-shadow">
+        </div>
+    </div>
 
-        <div>
-            <h3>Corporate Website</h3>
-            <img src="/One-Page Website/img/PM.png" alt="Professional corporate website" width="800" height="600">
-            <p>Sleek corporate website built with WordPress and custom animations using GSAP.</p>
-        </div>
+    <!-- Lightbox Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        
+        <div class="modal-content">
+            <!-- Slide 1 -->
+            <div class="mySlides">
+                <img src="/One-Page Website/img/GLT.png" style="width:100%">
+            </div>
 
-        <div>
-            <h3>Restaurant Website</h3>
-            <img src="/One-Page Website/img/CK.png" alt="Restaurant website with online ordering" width="800" height="600">
-            <p>Full-featured restaurant website with online ordering system and table reservations.</p>
-        </div>
+            <!-- Slide 2 -->
+            <div class="mySlides">
+                <img src="/One-Page Website/img/PM.png" style="width:100%">
+            </div>
 
-        <div>
-            <h3>Portfolio Website</h3>
-            <img src="https://via.placeholder.com/800x600/9B59B6/FFFFFF?text=Creative+Portfolio" alt="Creative portfolio website" width="800" height="600">
-            <p>Interactive portfolio featuring 3D elements created with Blender and Three.js.</p>
+            <!-- Slide 3 -->
+            <div class="mySlides">
+                <img src="/One-Page Website/img/CK.png" style="width:100%">
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="mySlides">
+                <img src="/One-Page Website/img/MyPrtfolio.png" style="width:100%">
+            </div>
+
+            <!-- Next/Previous Buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption -->
+            <div id="caption"></div>
+
+            <!-- Thumbnail Images -->
+            <div class="row">
+                <div class="column">
+                    <img class="demo" 
+                         src="/One-Page Website/img/GLT.png" 
+                         onclick="currentSlide(1)" 
+                         alt="E-Commerce Platform - Custom WooCommerce solution with advanced filtering and payment integration">
+                </div>
+                
+                <div class="column">
+                    <img class="demo" 
+                         src="/One-Page Website/img/PM.png" 
+                         onclick="currentSlide(2)" 
+                         alt="Corporate Website - Sleek corporate website built with WordPress and custom animations using GSAP">
+                </div>
+                
+                <div class="column">
+                    <img class="demo" 
+                         src="/One-Page Website/img/CK.png" 
+                         onclick="currentSlide(3)" 
+                         alt="Restaurant Website - Full-featured restaurant website with online ordering system and table reservations">
+                </div>
+                
+                <div class="column">
+                    <img class="demo" 
+                         src="https://via.placeholder.com/800x600/9B59B6/FFFFFF?text=Creative+Portfolio" 
+                         onclick="currentSlide(4)" 
+                         alt="Portfolio Website - Interactive portfolio featuring 3D elements created with Blender and Three.js">
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Services Section -->
     <section id="services">
@@ -221,5 +296,7 @@
         <hr>
         <p>&copy; 2024 Adobely. All rights reserved. | Designed and developed with passion in Toronto</p>
     </footer>
+    <script src="JS/one_page_website.js"></script>
+
 </body>
 </html>
